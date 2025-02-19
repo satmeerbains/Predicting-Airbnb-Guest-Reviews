@@ -42,7 +42,7 @@ Dummy variables were created and concatenated to the numeric columns of the data
 
 ### 4.4 Building the Machine Learning Model
 Built a model of various algorithms that
-* Fit the model first.
+* Fit the model.
 * Calculated and printed the evaluation metrics.
 * Produced train and test error, with the trained model name with y_predict to then calculate these metrics for all of the models at once.
 
@@ -50,15 +50,15 @@ Regression models Ridge, Decision Tree, Random Forest, XGBoost, LGBM, and MLP we
 
 Scalers Standard, MinMax, and no scale were used
 
-Different sets of features were created: full dataset, 40, 20, and 10. Where the selection was made according to Gini's index.
+Different sets of features were created: full dataset, 40, 20, and 10 where the selection was made according to Gini's index.
 
 ### 4.5 Results
-To compare predictions with original values and calculate them between them, three for loops were used inside each other taking values from the dictionaries created, then calculating the RMSE for each of our models.
+To compare predictions with original values and calculate them. Three for loops were used inside each other taking values from the dictionaries created, then calculating the RMSE for each of our models.
 
 The best performing model was Ridge	regression with 40 selected features (using Gini's Importance) with a scaling method of MinMax. It had a RMSE of 6.697556.
 
 ### 4.6 Conclusion
-This study demonstrates the potential of machine learning to predict Airbnb guest reviews with a relatively high degree of accuracy. The findings highlight the importance of factors such as features such as number of previous reviews, number of rooms available, cleaning fee, price, location, availability in determining guest satisfaction. By leveraging predictive models, both hosts and platform managers can gain valuable insights into the factors driving guest reviews, helping them improve their offerings and enhance user experiences.
+This study demonstrates the potential of machine learning to predict Airbnb guest reviews with a relatively high degree of accuracy. The findings highlight the importance of factors such as number of previous reviews, number of rooms available, cleaning fee, price, location, availability in determining guest satisfaction. By leveraging predictive models, both hosts and platform managers can gain valuable insights into the factors driving guest reviews, helping them improve their offerings and enhance user experiences.
 
 Future research could extend this work by incorporating the text-based data such as description of the stay, summary etc. using natural language processing to gain insight on top phrases/words used in negative or positive reviews. Exploring more advanced machine learning techniques like deep learning models should also be considered
 ![image](https://github.com/user-attachments/assets/d6a3c3e5-3ea7-417b-bc9c-a009f9766744)
